@@ -1,0 +1,101 @@
+@import url(https://db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro+Book);
+@font-face {
+    font-family: "Blender Pro Book";
+    src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot");
+    src: url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/335787aa6f57d71cabe8eb5dc89c6d6b.svg#Blender Pro Book")format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Blender Pro Book";
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding:0 2%;
+
+}
+
+.logo{
+    position: relative;
+}
+
+.logo img{
+    width: 230px;
+    margin-top: -30px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(2px) ;
+}
+
+section.main {
+    width: 100%;
+    min-height: 100%;
+    background-image: url(https://64.media.tumblr.com/25f3ef0c93707f8748dd8a670c265fbb/61f9d742c737e83a-42/s540x810/e6742c2a85280c905a8f32ed5d8f948254caad7b.gifv);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px;
+    transition: 0.3s;
+    padding: 3px 5px;
+}
+
+.menu a:hover{
+    border-radius: 5px;
+    background-color: gold;
+    color: red;
+}
+
+.Title {
+    
+    color: white;
+    font-size: 60px;   
+    margin-top: 230px;   
+}
+
+#aprender{
+    margin: top 190px;
+}
+
+.btn_gif{
+    position: absolute;
+    bottom:0;
+    padding: 30px 40px;
+    color: white;
+    margin-bottom: 80px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.587);
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: inset 0 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
