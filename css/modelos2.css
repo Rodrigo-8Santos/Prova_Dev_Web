@@ -43,20 +43,140 @@
 }
 
 .background{
-    background-image:url(https://tm.ibxk.com.br/2023/03/14/14141842941229.jpg);
+    background-image:url(https://i.pinimg.com/originals/c1/29/42/c12942b9643bc533f987429ea7c8f457.jpg);
     width: 100%;
     height: 100vh;
+    position: relative;
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+
 .img2{
-    background: url(https://i.pinimg.com/originals/c1/29/42/c12942b9643bc533f987429ea7c8f457.jpg);
+    background: url(https://images.pling.com/img/00/00/60/00/73/1491502/2a7d65c85efbd15f80110a296b09f2eb2af16360e476fd91339e1227a1c36748d4a7.jpg);
     width: 100%;
     height: 30vh;
-    background-position: center;
-    background-size: cover;
+    background-size: 100vw 70vh;
+    background-position: bottom;
     background-repeat: no-repeat;
-    margin-bottom: -50px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    perspective: 700px;
+    display: inline-block;   
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position:relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.container:hover>.card {
+    cursor: pointer;
+    transform: rotateY(180deg) scale(1.15);
+}
+
+.front, .front2, .front3, .front4,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.front {
+    background-image: url(https://vulkk.com/wp-content/uploads/2020/12/How-to-get-the-Quadra-Turbo-R-Car-in-Cyberpunk-2077-1.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.front2{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/367/595/826/cyberpunk-2077-4k-911-ii-930-turbo-porsche-car-hd-wallpaper-preview.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.front3{
+    background-image: url(https://conteudo.imguol.com.br/c/entretenimento/37/2020/12/15/cyberpunk-2077---rayfield-caliburn-1608055255110_v2_900x506.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+.front4{
+    background-image: url(https://pbs.twimg.com/media/E1OTOpwWEAI9CyE?format=jpg&name=4096x4096);
+    background-size: contain;
+    background-position: center;
+}
+
+
+.back {
+    background-color: yellow;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Vai ajustar automaticamente as colunas */
+    gap: 20px; /* Espaço entre os cards */
+    justify-items: center; /* Centralizar horizontalmente */
+    align-content: center; /* Centralizar verticalmente */
+    padding: 20px; /* Espaço interno */
+}
+
+.deck{
+    display: flex;
+    justify-content: space-around;
+    padding: 130px;
+}
+
+.deck2{
+   display: flex;
+   justify-content: space-around;
+   margin-left: 132px;
+   margin-right: 132px;
+}
+
+button{
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    width: 300px;
+}
+
+.back >a{
+    font-size: 30px;
+    color: black;
+}
+
+.icone i{
+    font-size: 50px;
+    text-decoration: none;
+    color: rgba(255, 255, 0, 0.7);
+    padding-bottom: 8px;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
 }
